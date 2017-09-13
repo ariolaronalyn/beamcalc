@@ -1,0 +1,83 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      Beam Calculator
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <h5 class="text-center" center text-center>  {{ selectedItem }} </h5>
+  
+  <form (ngSubmit)="solve()">
+    <!--<ion-list>--> 
+
+      <ion-item>
+        <ion-label stacked>R (Reaction)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.reaction" name="reaction"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>P (Load)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.load" name="load"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>PL</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.pl" name="pl"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>w (Uniformly Distributed)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.distributed" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>v (Uniformly Varying)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.varying" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>m (Moment)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.moment" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>ml </ion-label>
+        <ion-input type="tel" [(ngModel)]="form.ml" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>L (Length of Beam)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.beamlength" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>E (Modules)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.module" name="distributed"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label stacked>I (Inertia)</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.inertia" name="distributed"></ion-input>
+      </ion-item>
+
+
+  <button ion-button color="dark">Solve</button>
+    <!--</ion-list>-->
+  </form>
+  
+
+</ion-content>
